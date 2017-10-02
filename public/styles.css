@@ -1,0 +1,39 @@
+body{
+    margin: 10px;
+	font: 16px/1 sans-serif;
+	color: white;
+}
+#page {
+	padding:0px;
+	display: grid;
+	width: 100%;
+	grid-gap: 10px;
+	grid-template-areas:	"header header"
+							"navigation content";
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 80px 1fr;
+}
+
+nav, section, header { padding: 10px; }
+
+nav {
+	grid-area: navigation;
+	background-color: #3F72BC;
+}
+
+nav a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin:10px;
+}
+
+#main {
+	grid-area: content;
+	background-color: #164C87;
+}
+
+header {
+	grid-area: header;
+	background-color: #0F253E;
+}

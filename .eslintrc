@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "func-names": ["error", "never"],
+	"indent": ["error", "tab"],
+  "no-tabs": 0,
+  "no-var": 0,
+	"no-extend-native": 0
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "globals": {
+    "document": true,
+    "foo": true,
+	"window": true,
+	"describe": true,
+	"before": true,
+	"it": true
+  },
+  "overrides": [
+    {
+	  "files": [ "src/**/*.js" ],
+      "rules": {
+        "prefer-arrow-callback": 0,
+        "import/prefer-default-export": 0
+      }
+    }
+  ]
+}
